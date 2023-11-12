@@ -1,15 +1,14 @@
 // console.log("\n");
 // console.log("Задача 3. Сортування за кількістю друзів");
 
-// Напиши стрілочну функцію sortByDescendingFriendCount(users) , яка прийматиме один параметр users — масив об’єктів користувачів.
+// // 1) Напиши стрілочну функцію sortByDescendingFriendCount(users) ,
+// // яка прийматиме один параметр users — масив об’єктів користувачів.
 
-// Функція має повертати масив усіх користувачів, відсортованих за спаданням кількостій їх друзів (властивість friends).
-
-// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+// // 2) Функція має повертати масив усіх користувачів, відсортованих за спаданням кількостій їх друзів (властивість friends).
 
 
-// console.log(
-//   sortByDescendingFriendCount([
+
+// const users = [
 //     {
 //       name: "Moore Hensley",
 //       friends: ["Sharron Pace"],
@@ -45,8 +44,18 @@
 //       friends: ["Goldie Gentry", "Briana Decker"],
 //       gender: "female"
 //     }
-//   ])
-// );
+// ];
+
+
+// const sortByDescendingFriendCount = (users) => {
+//     const sortedUsers = users.toSorted((a, b) => b.friends.length - a.friends.length);
+
+//   return sortedUsers;
+// };
+
+  
+// console.log(sortByDescendingFriendCount(users));
+
 // // [
 // //   {
 // //     name: "Ross Vazquez",
@@ -83,4 +92,3 @@
 // //     friends: ["Sharron Pace"],
 // //     gender: "male"
 // //   }
-// // ]
